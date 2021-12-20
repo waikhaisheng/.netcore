@@ -1,0 +1,13 @@
+netcore/CommonLib/bin/
+netcore/CommonLib/obj/
+netcore/Models/bin/
+netcore/Models/obj/
+netcore/netcore/bin/
+netcore/netcore/obj/
+netcore/NUnitTestCommonLib/bin/
+netcore/NUnitTestCommonLib/obj/
+netcore/NUnitTestWebApplication/bin/
+netcore/NUnitTestWebApplication/obj/
+netcore/WebApplication/bin/
+netcore/WebApplication/obj/
+netcore/.vs/netcore/v16/

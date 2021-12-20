@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "4245d8d3-dbbf-444b-8a83-267a5a67ce0e",
+		"name": ".netcore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/Values/Action/123",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44306/api/Values/Action/123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Values",
+						"Action",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Values/Action",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"35771c94-ac2e-4560-88d6-f6d1cbc4b5f6\",\r\n    \"ReqDateTime\":\"2021-12-19T22:26:55.3012805+08:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44306/api/Values/Action",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Values",
+						"Action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Values/Action",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"35771c94-ac2e-4560-88d6-f6d1cbc4b5f6\",\r\n    \"ReqDateTime\":\"2021-12-19T22:26:55.3012805+08:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44306/api/Values/Action",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Values",
+						"Action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Values/Action",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"35771c94-ac2e-4560-88d6-f6d1cbc4b5f6\",\r\n    \"ReqDateTime\":\"2021-12-19T22:26:55.3012805+08:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44306/api/Values/Action",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Values",
+						"Action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Values/ActionException",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44306/api/Values/ActionException",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Values",
+						"ActionException"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
