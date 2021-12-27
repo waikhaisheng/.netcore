@@ -17,8 +17,8 @@ namespace WebApplication.Filters
         /// <summary>
         /// Creater: Wai Khai Sheng
         /// Created: 20211219
-        /// UpdatedBy: 
-        /// Updated: 
+        /// UpdatedBy: Wai Khai Sheng
+        /// Updated: 20211227
         /// </summary>
         public ApiBaseActionAttribute()
         {
@@ -26,12 +26,16 @@ namespace WebApplication.Filters
         /// <summary>
         /// Creater: Wai Khai Sheng
         /// Created: 20211219
-        /// UpdatedBy: 
-        /// Updated: 
+        /// UpdatedBy: Wai Khai Sheng
+        /// Updated: 20211227
         /// </summary>
         /// <param name="context"></param>
         public override void OnActionExecuting(ActionExecutingContext context)
         {
+            if (!context.ModelState.IsValid)
+            {
+
+            }
         }
         /// <summary>
         /// Creater: Wai Khai Sheng

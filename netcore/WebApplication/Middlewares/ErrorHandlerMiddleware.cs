@@ -14,8 +14,8 @@ namespace WebApplication.Middlewares
     /// <summary>
     /// Creater: Wai Khai Sheng
     /// Created: 20211219
-    /// UpdatedBy: 
-    /// Updated: 
+    /// UpdatedBy: Wai Khai Sheng
+    /// Updated: 20211227
     /// </summary>
     public class ErrorHandlerMiddleware
     {
@@ -68,19 +68,9 @@ namespace WebApplication.Middlewares
         private Task HandleException(HttpContext context, Exception exception)
         {
             string jsonString = string.Empty;
-
-            var requestInfo = context.Features.Get<IExceptionHandlerFeature>();
-
-            #region example
-            var remark = "Exceptions:{\n";
-            remark += $"Error:{exception.Message}, StackTrace:{exception.StackTrace}\n";
-            remark += "}";
-
             context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             jsonString = JsonConvert.SerializeObject(exception);
             return GenerateResponse(context, jsonString);
-            #endregion
-
         }
         /// <summary>
         /// Creater: Wai Khai Sheng
@@ -95,28 +85,6 @@ namespace WebApplication.Middlewares
         {
             context.Response.ContentType = "application/json";
             await context.Response.WriteAsync(jsonString, Encoding.UTF8);
-        }
-    }
-
-    /// <summary>
-    /// Creater: Wai Khai Sheng
-    /// Created: 20211219
-    /// UpdatedBy: 
-    /// Updated: 
-    /// </summary>
-    public static class ErrorHandlerMiddlewareExtensions
-    {
-        /// <summary>
-        /// Creater: Wai Khai Sheng
-        /// Created: 20211219
-        /// UpdatedBy: 
-        /// Updated: 
-        /// </summary>
-        /// <param name="builder"></param>
-        /// <returns></returns>
-        public static IApplicationBuilder UseErrorHandlerMiddleware(this IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<ErrorHandlerMiddleware>();
         }
     }
 }

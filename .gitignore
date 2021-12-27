@@ -11,3 +11,13 @@ netcore/NUnitTestWebApplication/obj/
 netcore/WebApplication/bin/
 netcore/WebApplication/obj/
 netcore/.vs/netcore/v16/
+netcore/Common/obj/
+netcore/Common/bin/
+netcore/Services/obj/
+netcore/Services/bin/
+netcore/Database/obj/
+netcore/Database/bin/
+netcore/NUnitTestDatabase/bin/
+netcore/NUnitTestDatabase/obj/
+netcore/NUnitTestServices/bin/
+netcore/NUnitTestServices/obj/
