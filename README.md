@@ -1,4 +1,4 @@
-# **.netcore5** <small style="float:right;font-size: 12px;">Updated: 29 Dec 2021</small>
+# **.netcore5** 
 ## **netcore**
 > Console Application that to name the project
 
@@ -64,3 +64,5 @@ console.log("javascript debug here")
 
 </p>
 </details>
+
+<small style="float:right;font-size: 12px;">Updated: 29 Dec 2021</small>
